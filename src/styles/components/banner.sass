@@ -1,0 +1,32 @@
+@use '../variables'
+
+h1
+    display: none
+
+.banner-img
+    width: 100%
+    
+    
+@media screen and (max-width: 992px)   
+    h1
+        display: grid
+        text-align: center
+        align-items: center
+        margin-top: 2rem
+        font-family: 'Nomark', sans-serif
+        font-weight: variables.$title-weight
+        font-size: variables.$title-font-size 
+
+    .banner-img
+        display: none
+    
+
+@media screen and (max-width: 576px) 
+    .banner-img
+        display: none
+    
+
+@media screen and (max-width: 350px)
+    .banner-img
+        display: none
+    
