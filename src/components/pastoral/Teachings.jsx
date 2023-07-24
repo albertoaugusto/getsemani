@@ -65,7 +65,6 @@ const Teachings = () => {
                 </div>    
             </div>
         </div>
-    
     </section>
   )
 }
