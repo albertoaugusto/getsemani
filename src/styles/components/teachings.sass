@@ -1,0 +1,88 @@
+@use '../variables'
+
+#teachings
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  padding: 20px
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+
+h4
+    font-size: 1.3rem
+
+.cards-container 
+  display: flex
+  justify-content: center
+  align-items: center 
+  flex-wrap: wrap
+
+.card-teach 
+  width: 230px
+  height: 350px
+  background: #000
+  overflow: hidden
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.118)
+  transition: all .25s ease  
+  border-radius: 15px
+  margin: 10px
+  cursor: default
+  
+.card-teach h5
+    font-size: .9rem
+    
+
+.card-teach:hover
+    transform: scale(.9)
+
+.card-teach:hover:after
+    height: 220px
+
+.card-teach:hover .card-text-teach p
+    margin-bottom: 0 
+    opacity: 1 
+
+.card-teach:hover img 
+    transform: scale(1.25)
+
+.card-teach:after
+    width: 100%
+    content: ''
+    left: 0 
+    bottom: 0
+    height: 150px
+    position: absolute
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%)
+    z-index: 20
+    transition: all .25s ease
+
+.card-teach .card-teach-img
+    
+    height: 100%
+    z-index: 10
+    transition: all .25s ease
+
+.card-teach .card-text-teach
+    z-index: 30
+    position: absolute
+    bottom: 20px
+    color: variables.$body-color
+    padding: 20px
+    padding-bottom: 30px
+
+.card-teach .card-text-teach p
+    font-size: 1rem
+    font-weight: 5    00
+    opacity: 0
+    margin-bottom: -170px 
+    transition: all .25s ease
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    justify-content: flex-end
+    flex-direction: column
+
