@@ -1,11 +1,12 @@
 @use '../variables'
 
-#teachings
+#elders
   display: flex
   justify-content: center
   align-items: center
   flex-direction: column
   padding: 20px
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05)
   
 
 h4
@@ -17,8 +18,8 @@ h4
   align-items: center 
   flex-wrap: wrap
 
-.card-teach 
-  width: 230px
+.card-elders 
+  width: 260px
   height: 350px
   background: #000
   overflow: hidden
@@ -32,23 +33,23 @@ h4
   margin: 10px
   cursor: default
   
-.card-teach h5
+.card-elders h5
     font-size: .9rem
     
-.card-teach:hover
+.card-elders:hover
     transform: scale(.9)
 
-.card-teach:hover:after
+.card-elders:hover:after
     height: 220px
 
-.card-teach:hover .card-text-teach p
+.card-elders:hover .card-text-elders p
     margin-bottom: 0 
     opacity: 1 
 
-.card-teach:hover img 
+.card-elders:hover img 
     transform: scale(1.25)
 
-.card-teach:after
+.card-elders:after
     width: 100%
     content: ''
     left: 0 
@@ -59,12 +60,12 @@ h4
     z-index: 20
     transition: all .25s ease
 
-.card-teach .card-teach-img
+.card-elders .card-elders-img
     height: 100%
     z-index: 10
     transition: all .25s ease
 
-.card-teach .card-text-teach
+.card-elders .card-text-elders
     z-index: 30
     position: absolute
     bottom: 20px
@@ -72,7 +73,7 @@ h4
     padding: 20px
     padding-bottom: 30px
 
-.card-teach .card-text-teach p
+.card-elders .card-text-elders p
     font-size: 1rem
     font-weight: 5    00
     opacity: 0
@@ -87,11 +88,11 @@ h4
 /*responsive*/
 
 @media (max-width: 1250px) 
-  .card-teach
+  .card-elders
     width: 300px
     height: 100%
 
-  .card-teach .card-teach-img
+  .card-elders .card-elders-img
     width: 100%
     height: 100%
 
@@ -103,19 +104,19 @@ h4
     margin-bottom: 1rem
 
 @media (max-width: 1100px)
-  .card-teach
+  .card-elders
     width: 70%
     height: 100%
 
-  .card-teach .card-teach-img
+  .card-elders .card-elders-img
     width: 100%
     height: 100%
 
-  .card-text-teach p
+  .card-elders-teach p
     font-size: 1.2rem  
 
 @media (max-width: 550px)
-  .card-teach
+  .card-elders
     margin: 20px 10px
     width: 100%
 
