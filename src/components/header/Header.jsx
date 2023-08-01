@@ -40,7 +40,11 @@ function Header () {
                             <i className="uil uil-image-v nav-icon"></i> Ministérios
                         </a>
                     </li>
-
+                    <li className="nav-item">
+                        <a href="#events" onClick={() => setActiveNav("#events")} className={activeNav === "#events" ? "nav-link active-link" : "nav-link"}>
+                            <i className="uil uil-calendar-alt nav-icon"></i> Eventos
+                        </a>
+                    </li>
                     <li className="nav-item">
                         <a href="#suport" onClick={() => setActiveNav("#suport")} className={activeNav === "#suport" ? "nav-link active-link" : "nav-link"}>
                             <i className="uil uil-hospital nav-icon"></i> Apoio 
@@ -50,11 +54,6 @@ function Header () {
                     <li className="nav-item">
                         <a href="#devotionals" onClick={() => setActiveNav("#devotionals")} className={activeNav === "#devotionals" ? "nav-link active-link" : "nav-link"}>
                             <i className="uil uil-book-open nav-icon"></i> Devocionais
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#events" onClick={() => setActiveNav("#events")} className={activeNav === "#events" ? "nav-link active-link" : "nav-link"}>
-                            <i className="uil uil-calendar-alt nav-icon"></i> Eventos
                         </a>
                     </li>
                     <li className="nav-item">

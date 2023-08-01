@@ -1,7 +1,7 @@
 import '../../styles/components/pastoral.sass'
 import Teachings from './Teachings'
 import Deacons from './Deacons'
-import Elders from './Elders'
+
 
 const Pastoral = () => {
   return (
@@ -14,7 +14,6 @@ const Pastoral = () => {
         <>
             <Teachings />
             <Deacons />
-            <Elders />
         </>
     </section>
   )
