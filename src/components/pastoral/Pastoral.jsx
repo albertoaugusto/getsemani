@@ -1,7 +1,7 @@
-
-import Teachings from '../pastoral/Teachings'
-import Deacons from '../pastoral/Deacons'
-import Elders from '../pastoral/Elders'
+import '../../styles/components/pastoral.sass'
+import Teachings from './Teachings'
+import Deacons from './Deacons'
+import Elders from './Elders'
 
 const Pastoral = () => {
   return (

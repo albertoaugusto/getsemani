@@ -1,0 +1,102 @@
+@use '../variables'
+
+#ministries
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+
+.container-young
+  margin-bottom: variables.$mb-2
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 20px
+
+
+.slideshow 
+  padding: 20px
+  margin: auto
+  width: 50vw
+  aspect-ratio: calc(16 / 9)
+  position: relative
+  overflow: hidden
+  border-radius: 15px
+
+button 
+  padding: 16px
+  font-size: 25px
+  width: 64px
+  aspect-ratio: 1
+  border-radius: 50%
+  background: none
+  border: none
+  cursor: pointer
+  text-align: center
+  color: white
+  transition: ease-in 0.2s
+
+button:hover 
+    color: variables.$font-color
+
+
+.prevButton 
+  position: absolute
+  top: 50%
+  left: 16px
+  transform: translateY(-50%)
+
+.nextButton
+  position: absolute
+  top: 50%
+  right: 16px
+  transform: translateY(-50%)
+
+.slides 
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  object-fit: cover
+  object-position: center center 
+
+
+@media (min-width: 1366px)
+  .slideshow 
+    padding: 10px
+    width: 60vw
+    
+@media (max-width: 768px)
+  .container-young
+     padding: 15px
+
+  .slideshow 
+    padding: 10px
+    margin: auto
+    width: 90vw
+    aspect-ratio: calc(16 / 9)
+    position: relative
+    overflow: hidden
+    border-radius: 15px
+
+  button 
+    padding: 16px
+    font-size: 25px
+    width: 30px
+    aspect-ratio: 1
+    background: none
+    border: none
+    cursor: pointer
+    text-align: center
+    color: white
+    transition: ease-in 0.2s
+
+  .prevButton 
+    position: absolute
+    top: 50%
+    left: 0px
+    transform: translateY(-50%)
+
+  .nextButton
+    position: absolute
+    top: 50%
+    right: 19px
+    transform: translateY(-50%)

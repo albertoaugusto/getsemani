@@ -1,9 +1,8 @@
 import '../../styles/components/teachings.sass'
 import Card1 from '../../assets/pr-luiz.png'
 import Card2 from '../../assets/vice-carlos.png'
-{/*import foto pr washingyon*/}
 import Card3 from '../../assets/pr-suelma-washington.png'
-import Card4 from '../../assets/vice-pb-clovis.png'
+import Card4 from '../../assets/vice-clovis.png'
 import Card5 from '../../assets/sec-ricardo.png'
 
 const Teachings = () => {
